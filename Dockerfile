@@ -1,11 +1,13 @@
 # Stage 1: Build stage
-FROM alpine:latest AS builder
+#FROM alpine:latest AS builder
+FROM public.ecr.aws/docker/library/alpine:latest
 
 # 必要なツールをインストールする模擬構成
 RUN apk --no-cache add curl
 
 # Stage 2: Final stage
-FROM nginx:alpine
+#FROM nginx:alpine
+FROM public.ecr.aws/nginx/nginx:mainline-alpine
 
 # index.htmlをローカルディレクトリからNginxのHTMLフォルダにコピーする。
 COPY ./index.html /usr/share/nginx/html/index.html
