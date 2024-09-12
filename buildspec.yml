@@ -15,7 +15,7 @@ phases:
   build:
     commands:
       - docker build -t my-nginx-image:latest .
-  port_build:
+  post_build:
     commands:
       - docker tag my-nginx-image:latest ${ECR_MAIN_URI}
       - docker push ${ECR_IMAGE_URI}
