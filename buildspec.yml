@@ -17,5 +17,5 @@ phases:
       - docker build -t ${ECR_REPO_NAME}:latest .
   post_build:
     commands:
-      - docker tag ${ECR_REPO_NAME}:latest ${ECR_MAIN_URI}
+      - docker tag ${ECR_REPO_NAME}:latest ${ECR_IMAGE_URI}
       - docker push ${ECR_IMAGE_URI}
