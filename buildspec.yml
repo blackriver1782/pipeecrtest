@@ -22,6 +22,8 @@ phases:
 
       # Generate image definitions file for ECS
       - printf '[{"name":"angular-app","imageUri":"%s"}]' ${ECR_IMAGE_URI} > imagedefinitions.json
+      - printf '{"imageUri":"%s"}]' ${ECR_IMAGE_URI} > imageDetail.json
+
         
 artifacts:
   files:
