@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "715731572821.dkr.ecr.ap-northeast-1.amazonaws.com/docker-test:e932b174"
+        TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
           ContainerName: "angular-app"
           ContainerPort: "80"
