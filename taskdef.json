@@ -86,6 +86,5 @@
         "operatingSystemFamily": "LINUX"
     },
     "registeredAt": "2024-09-13T00:59:29.398Z",
-    "registeredBy": "arn:aws:sts::715731572821:assumed-role/AWSCodePipelineServiceRole-ap-northeast-1-dockerpipeline/1726189169053",
-    "tags": []
+    "registeredBy": "arn:aws:sts::715731572821:assumed-role/AWSCodePipelineServiceRole-ap-northeast-1-dockerpipeline/1726189169053"
 }
