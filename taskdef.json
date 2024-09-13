@@ -1,5 +1,4 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:715731572821:task-definition/my-angluar-task:3",
     "containerDefinitions": [
         {
             "name": "angular-app",
